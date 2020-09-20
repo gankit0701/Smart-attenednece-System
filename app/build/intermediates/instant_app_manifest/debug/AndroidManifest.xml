@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.attendencecheck"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="29" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.example.attendencecheck.ApplicationContext"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="com.example.attendencecheck.ViewAttendanceRecord" />
+        <activity android:name="com.example.attendencecheck.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.attendencecheck.LoginActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.MenuActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.ViewFacultyActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.ViewAttandanceActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.ViewStudentActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.TestActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.ViewStudentByBranchYear"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.AddAttandanceSessionActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.AddStudentActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.AddFacultyActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.ViewAttendancePerStudentActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.ViewAttendanceByFacultyActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.example.attendencecheck.AddAttendanceActivity"
+            android:label="@string/app_name" />
+    </application>
+
+</manifest>
